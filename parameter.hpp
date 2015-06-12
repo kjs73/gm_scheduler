@@ -1,3 +1,4 @@
+#include <iostream>
 #include <string>
 
 template <class T>
@@ -12,8 +13,9 @@ public:
 private:
     const name_t name;
     T value;
-    void read_value()
+    void read_value(std::ostream& ost=std::cout, std::istream& ist=std::cin)
     {
-        
+        ost << "provide parameter " << name << "\n";
+        ist >> value;
     }
 };
