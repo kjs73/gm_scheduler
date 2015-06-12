@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.8)
+#include_directories("~/projects/CppCode")
+#include_directories($ENV{BOOSTPATH})
+set(CMAKE_CXX_COMPILER "c++")
+set(CMAKE_CXX_FLAGS "-std=c++0x")
+add_executable(gm_scheduler_main gm_scheduler_main.cpp gm_scheduler.cpp)
