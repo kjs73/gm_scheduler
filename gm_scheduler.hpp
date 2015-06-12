@@ -1,10 +1,10 @@
 #include "parameter.hpp"
+#include "speaker.hpp"
 
 class gm_scheduler {
 public:
-    typedef unsigned int week_t;
+    typedef speaker::week_t week_t;
     typedef unsigned int speaker_nr_t;
-    typedef std::string name_t;
     gm_scheduler();
 private:
     parameter<week_t> nr_weeks_to_schedule;

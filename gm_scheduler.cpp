@@ -1,5 +1,3 @@
-#include <iostream>
-
 #include "gm_scheduler.hpp"
 
 gm_scheduler::gm_scheduler()
