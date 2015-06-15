@@ -2,7 +2,6 @@
 #define SEQUENCE_HPP_KJS
 
 #include <map>
-#include <memory>
 #include <vector>
 
 #include "speaker.hpp"
