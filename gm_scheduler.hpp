@@ -11,6 +11,7 @@ public:
     typedef sequence::ranking_t ranking_t;
     gm_scheduler();
 private:
+    void read_in_speakers();
     parameter<week_t> nr_weeks_to_schedule;
     parameter<speaker_nr_t> nr_speakers_per_week;
     ranking_t ranking;

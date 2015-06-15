@@ -10,6 +10,7 @@ public:
     typedef unsigned int week_t;
     speaker();
     name_t name() const { return name_; }
+    week_t weeks() const { return weeks_since_last_talk; }
 private:
     name_t name_;
     week_t weeks_since_last_talk;

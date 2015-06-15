@@ -12,8 +12,8 @@ public:
     typedef speaker::name_t name_t;
     typedef speaker::week_t week_t;
     typedef unsigned int speaker_nr_t;
-    typedef std::multimap<week_t, std::shared_ptr<speaker> > ranking_t;
-    sequence(const ranking_t&);
+    typedef std::multimap<week_t, speaker > ranking_t;
+    void set_up(const ranking_t&);
     void print(std::ostream&, const week_t, const speaker_nr_t);
 private:
     std::vector<name_t> ordered_names;
